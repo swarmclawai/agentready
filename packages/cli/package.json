@@ -1,0 +1,52 @@
+{
+  "name": "@swarmclawai/agentready",
+  "version": "0.1.0-alpha.0",
+  "description": "Open-source readiness scanner for the agentic web.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "agentready": "dist/index.cjs"
+  },
+  "main": "dist/index.cjs",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist",
+    "dev": "tsx src/index.ts",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "commander": "^14.0.2",
+    "tsup": "^8.5.1",
+    "yaml": "^2.8.1"
+  },
+  "keywords": [
+    "agent",
+    "ai",
+    "scanner",
+    "agentic-commerce",
+    "mcp",
+    "a2a",
+    "x402",
+    "llms.txt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swarmclawai/agentready.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swarmclawai/agentready/issues"
+  },
+  "homepage": "https://github.com/swarmclawai/agentready#readme"
+}
